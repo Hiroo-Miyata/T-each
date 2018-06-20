@@ -27,12 +27,18 @@ class User: NSObject {
         Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
             if error == nil {
                 user?.sendEmailVerification(completion: nil)
-                let values = ["name": withName, "email": email]
-                Firestore.firestore().collection("users").document((user?.uid)!).setData(values, completion: { (err) in
-                    if let err = err {
-                        print("Error adding document: \(err)")
-                    } else {
-                        print("成功しました")
+                let storageRef = Storage.storage().reference().child("usersProfilePics").child(user!.uid)
+                let imageData = UIImageJPEGRepresentation(profilePic, 0.1)
+                storageRef.putData(imageData!, metadata: nil, completion: { (metadata, err) in
+                    if err == nil {
+                        let values = ["name": withName, "email": email]
+                        Firestore.firestore().collection("users").document((user?.uid)!).setData(values, completion: { (err) in
+                            if let err = err {
+                                print("Error adding document: \(err)")
+                            } else {
+                                print("成功しました")
+                            }
+                        })
                     }
                 })
                 
@@ -66,7 +72,24 @@ class User: NSObject {
     }
     
     class func info(forUserID: String, completion: @escaping (User) -> Swift.Void) {
-       
+        Firestore.firestore().collection("users").document(forUserID).getDocument { (document, err) in
+            if err == nil {
+                if let data = document?.data(){
+                    let name = data["name"] as! String
+                    let email = data["email"] as! String
+                    let link = URL.init(string: data["profilePicLink"]! as! String)
+                    URLSession.shared.dataTask(with: link!, completionHandler: { (data, response, error) in
+                        if error == nil {
+                            let profilePic = UIImage.init(data: data!)
+                            let user = User.init(name: name, email: email, id: forUserID, profilePic: profilePic!)
+                            completion(user)
+                        }
+                    }).resume()
+                    
+                }
+                
+            }
+        }
     }
     
     class func downloadAllUsers(exceptID: String, completion: @escaping (User) -> Swift.Void) {
@@ -84,3 +107,4 @@ class User: NSObject {
         })
     }
 }
+

@@ -9,4 +9,5 @@ target 'T-each' do
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
   pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
 end

@@ -1,3 +1,5 @@
+
+
 //
 //  Question.swift
 //  T-each
@@ -10,22 +12,22 @@ import UIKit
 import Firebase
 
 class Question {
-    var name: String
+    var user: User
     var content: String
     var subject: String
     var image: UIImage
     var timestamp: Int
     
-    init(name: String, content: String, subject: String, image: UIImage, timestamp: Int) {
-        self.name = name
+    init(user: User, content: String, subject: String, image: UIImage, timestamp: Int) {
+        self.user = user
         self.content = content
         self.subject = subject
         self.image = image
         self.timestamp = timestamp
     }
     
-    class func registerQuestion(name: String, content: String, subject: String, image: UIImage) {
-        let params:[String : Any] = ["name": name, "content": content, "subject": subject, "image": image]
+    class func registerQuestion(userID: String, content: String, subject: String, image: UIImage) {
+        let params:[String : Any] = ["userID": userID, "content": content, "subject": subject, "image": image]
         Firestore.firestore().collection("questions").addDocument(data: params) { (err) in
             if let err = err {
                 print("Error adding document: \(err)")
@@ -43,19 +45,22 @@ class Question {
                 var questions = [Question]()
                 for document in querySnapshot!.documents {
                     let data = document.data()
-                    let name = data["name"] as! String
+                    let userID = data["userID"] as! String
                     let content = data["content"] as! String
                     let subject = data["subject"] as! String
                     let image = data["image"] as! UIImage
                     let timestamp = data["timestamp"] as! Int
-                    let question = Question.init(name: name, content: content, subject: subject, image: image, timestamp: timestamp)
-                    questions.append(question)
+                    User.info(forUserID: userID, completion: { (user) in
+                        let question = Question.init(user: user, content: content, subject: subject, image: image, timestamp: timestamp)
+                        questions.append(question)
+                    })
                 }
                 completion(questions)
             }
         }
-
+        
     }
     
     
 }
+
