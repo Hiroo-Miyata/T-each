@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		456791DE20DADADB007DD4FC /* CreateQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456791DA20DADADB007DD4FC /* CreateQuestionViewController.swift */; };
+		456791DF20DADADB007DD4FC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456791DB20DADADB007DD4FC /* HomeViewController.swift */; };
+		456791E020DADADB007DD4FC /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456791DC20DADADB007DD4FC /* QuestionTableViewCell.swift */; };
+		456791E120DADADB007DD4FC /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456791DD20DADADB007DD4FC /* QuestionViewController.swift */; };
 		45B6C92D20DA06E400C32F85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B6C92C20DA06E400C32F85 /* AppDelegate.swift */; };
 		45B6C93220DA06E400C32F85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45B6C93020DA06E400C32F85 /* Main.storyboard */; };
 		45B6C93420DA06E400C32F85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45B6C93320DA06E400C32F85 /* Assets.xcassets */; };
 		45B6C93720DA06E400C32F85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45B6C93520DA06E400C32F85 /* LaunchScreen.storyboard */; };
-		45B6C93F20DA0F8700C32F85 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B6C93E20DA0F8700C32F85 /* HomeViewController.swift */; };
-		45B6C94120DA0FAC00C32F85 /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B6C94020DA0FAC00C32F85 /* QuestionTableViewCell.swift */; };
 		45B6C94420DA177200C32F85 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B6C94320DA177200C32F85 /* Question.swift */; };
 		45B6C94620DA19F900C32F85 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B6C94520DA19F900C32F85 /* User.swift */; };
 		45B6C94820DA1E6A00C32F85 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 45B6C94720DA1E6A00C32F85 /* GoogleService-Info.plist */; };
@@ -22,14 +24,16 @@
 
 /* Begin PBXFileReference section */
 		142CCC87F1DFFBA29B424175 /* Pods-T-each.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T-each.release.xcconfig"; path = "Pods/Target Support Files/Pods-T-each/Pods-T-each.release.xcconfig"; sourceTree = "<group>"; };
+		456791DA20DADADB007DD4FC /* CreateQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateQuestionViewController.swift; sourceTree = "<group>"; };
+		456791DB20DADADB007DD4FC /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		456791DC20DADADB007DD4FC /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
+		456791DD20DADADB007DD4FC /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		45B6C92920DA06E400C32F85 /* T-each.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "T-each.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45B6C92C20DA06E400C32F85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45B6C93120DA06E400C32F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		45B6C93320DA06E400C32F85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45B6C93620DA06E400C32F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45B6C93820DA06E400C32F85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		45B6C93E20DA0F8700C32F85 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		45B6C94020DA0FAC00C32F85 /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
 		45B6C94320DA177200C32F85 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		45B6C94520DA19F900C32F85 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		45B6C94720DA1E6A00C32F85 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -59,6 +63,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		456791D920DADADB007DD4FC /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				456791DA20DADADB007DD4FC /* CreateQuestionViewController.swift */,
+				456791DB20DADADB007DD4FC /* HomeViewController.swift */,
+				456791DC20DADADB007DD4FC /* QuestionTableViewCell.swift */,
+				456791DD20DADADB007DD4FC /* QuestionViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 		45B6C92020DA06E300C32F85 = {
 			isa = PBXGroup;
 			children = (
@@ -80,15 +95,14 @@
 		45B6C92B20DA06E400C32F85 /* T-each */ = {
 			isa = PBXGroup;
 			children = (
-				45B6C94220DA174C00C32F85 /* Model */,
 				45B6C92C20DA06E400C32F85 /* AppDelegate.swift */,
+				456791D920DADADB007DD4FC /* VC */,
+				45B6C94220DA174C00C32F85 /* Model */,
 				45B6C93020DA06E400C32F85 /* Main.storyboard */,
 				45B6C93320DA06E400C32F85 /* Assets.xcassets */,
 				45B6C93520DA06E400C32F85 /* LaunchScreen.storyboard */,
 				45B6C93820DA06E400C32F85 /* Info.plist */,
 				45B6C94720DA1E6A00C32F85 /* GoogleService-Info.plist */,
-				45B6C93E20DA0F8700C32F85 /* HomeViewController.swift */,
-				45B6C94020DA0FAC00C32F85 /* QuestionTableViewCell.swift */,
 			);
 			path = "T-each";
 			sourceTree = "<group>";
@@ -243,12 +257,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45B6C94120DA0FAC00C32F85 /* QuestionTableViewCell.swift in Sources */,
 				45B6C94420DA177200C32F85 /* Question.swift in Sources */,
 				45B6C92D20DA06E400C32F85 /* AppDelegate.swift in Sources */,
+				456791DE20DADADB007DD4FC /* CreateQuestionViewController.swift in Sources */,
 				45B6C94A20DA389E00C32F85 /* Message.swift in Sources */,
 				45B6C94620DA19F900C32F85 /* User.swift in Sources */,
-				45B6C93F20DA0F8700C32F85 /* HomeViewController.swift in Sources */,
+				456791DF20DADADB007DD4FC /* HomeViewController.swift in Sources */,
+				456791E120DADADB007DD4FC /* QuestionViewController.swift in Sources */,
+				456791E020DADADB007DD4FC /* QuestionTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
