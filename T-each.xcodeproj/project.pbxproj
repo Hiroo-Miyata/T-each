@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		452DADFA20DCF3DD002FE4ED /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452DADF920DCF3DD002FE4ED /* Helper.swift */; };
+		452DADFC20DCF439002FE4ED /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452DADFB20DCF439002FE4ED /* SignInViewController.swift */; };
+		452DADFE20DCF72E002FE4ED /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452DADFD20DCF72E002FE4ED /* TabBarViewController.swift */; };
+		4539F5F120DF6CFF0032B68D /* CreateMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4539F5F020DF6CFF0032B68D /* CreateMessageViewController.swift */; };
+		4539F5F320DFA9DA0032B68D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4539F5F220DFA9DA0032B68D /* ProfileViewController.swift */; };
+		4539F5F720DFADA70032B68D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4539F5F620DFADA70032B68D /* TableViewCell.swift */; };
+		4539F5F920DFB3CD0032B68D /* KeywordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4539F5F820DFB3CD0032B68D /* KeywordViewController.swift */; };
 		456791DE20DADADB007DD4FC /* CreateQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456791DA20DADADB007DD4FC /* CreateQuestionViewController.swift */; };
 		456791DF20DADADB007DD4FC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456791DB20DADADB007DD4FC /* HomeViewController.swift */; };
-		456791E020DADADB007DD4FC /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456791DC20DADADB007DD4FC /* QuestionTableViewCell.swift */; };
 		456791E120DADADB007DD4FC /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456791DD20DADADB007DD4FC /* QuestionViewController.swift */; };
 		45B6C92D20DA06E400C32F85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B6C92C20DA06E400C32F85 /* AppDelegate.swift */; };
 		45B6C93220DA06E400C32F85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45B6C93020DA06E400C32F85 /* Main.storyboard */; };
@@ -19,14 +25,21 @@
 		45B6C94620DA19F900C32F85 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B6C94520DA19F900C32F85 /* User.swift */; };
 		45B6C94820DA1E6A00C32F85 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 45B6C94720DA1E6A00C32F85 /* GoogleService-Info.plist */; };
 		45B6C94A20DA389E00C32F85 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B6C94920DA389E00C32F85 /* Message.swift */; };
+		45D0F15520DE36F4000E59AD /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D0F15420DE36F4000E59AD /* LandingViewController.swift */; };
 		C886CD5D5664AFBF6CA429BD /* Pods_T_each.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC21AC8E6E8AE3717E3D7C4 /* Pods_T_each.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		142CCC87F1DFFBA29B424175 /* Pods-T-each.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T-each.release.xcconfig"; path = "Pods/Target Support Files/Pods-T-each/Pods-T-each.release.xcconfig"; sourceTree = "<group>"; };
+		452DADF920DCF3DD002FE4ED /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		452DADFB20DCF439002FE4ED /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		452DADFD20DCF72E002FE4ED /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		4539F5F020DF6CFF0032B68D /* CreateMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMessageViewController.swift; sourceTree = "<group>"; };
+		4539F5F220DFA9DA0032B68D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4539F5F620DFADA70032B68D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		4539F5F820DFB3CD0032B68D /* KeywordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordViewController.swift; sourceTree = "<group>"; };
 		456791DA20DADADB007DD4FC /* CreateQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateQuestionViewController.swift; sourceTree = "<group>"; };
 		456791DB20DADADB007DD4FC /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		456791DC20DADADB007DD4FC /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
 		456791DD20DADADB007DD4FC /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		45B6C92920DA06E400C32F85 /* T-each.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "T-each.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45B6C92C20DA06E400C32F85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +51,7 @@
 		45B6C94520DA19F900C32F85 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		45B6C94720DA1E6A00C32F85 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		45B6C94920DA389E00C32F85 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		45D0F15420DE36F4000E59AD /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		6EC21AC8E6E8AE3717E3D7C4 /* Pods_T_each.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_T_each.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F12BA10972FD3AA4D4ADBD9 /* Pods-T-each.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T-each.debug.xcconfig"; path = "Pods/Target Support Files/Pods-T-each/Pods-T-each.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,13 +77,27 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		452DADF820DCF3C4002FE4ED /* extention */ = {
+			isa = PBXGroup;
+			children = (
+				452DADF920DCF3DD002FE4ED /* Helper.swift */,
+			);
+			path = extention;
+			sourceTree = "<group>";
+		};
 		456791D920DADADB007DD4FC /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				456791DA20DADADB007DD4FC /* CreateQuestionViewController.swift */,
+				45D0F15420DE36F4000E59AD /* LandingViewController.swift */,
+				452DADFB20DCF439002FE4ED /* SignInViewController.swift */,
 				456791DB20DADADB007DD4FC /* HomeViewController.swift */,
-				456791DC20DADADB007DD4FC /* QuestionTableViewCell.swift */,
 				456791DD20DADADB007DD4FC /* QuestionViewController.swift */,
+				456791DA20DADADB007DD4FC /* CreateQuestionViewController.swift */,
+				4539F5F020DF6CFF0032B68D /* CreateMessageViewController.swift */,
+				452DADFD20DCF72E002FE4ED /* TabBarViewController.swift */,
+				4539F5F220DFA9DA0032B68D /* ProfileViewController.swift */,
+				4539F5F620DFADA70032B68D /* TableViewCell.swift */,
+				4539F5F820DFB3CD0032B68D /* KeywordViewController.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -95,10 +123,11 @@
 		45B6C92B20DA06E400C32F85 /* T-each */ = {
 			isa = PBXGroup;
 			children = (
+				452DADF820DCF3C4002FE4ED /* extention */,
 				45B6C92C20DA06E400C32F85 /* AppDelegate.swift */,
+				45B6C93020DA06E400C32F85 /* Main.storyboard */,
 				456791D920DADADB007DD4FC /* VC */,
 				45B6C94220DA174C00C32F85 /* Model */,
-				45B6C93020DA06E400C32F85 /* Main.storyboard */,
 				45B6C93320DA06E400C32F85 /* Assets.xcassets */,
 				45B6C93520DA06E400C32F85 /* LaunchScreen.storyboard */,
 				45B6C93820DA06E400C32F85 /* Info.plist */,
@@ -221,6 +250,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-T-each/Pods-T-each-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
@@ -234,6 +264,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
@@ -257,14 +288,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				452DADFC20DCF439002FE4ED /* SignInViewController.swift in Sources */,
 				45B6C94420DA177200C32F85 /* Question.swift in Sources */,
 				45B6C92D20DA06E400C32F85 /* AppDelegate.swift in Sources */,
+				452DADFE20DCF72E002FE4ED /* TabBarViewController.swift in Sources */,
 				456791DE20DADADB007DD4FC /* CreateQuestionViewController.swift in Sources */,
 				45B6C94A20DA389E00C32F85 /* Message.swift in Sources */,
 				45B6C94620DA19F900C32F85 /* User.swift in Sources */,
 				456791DF20DADADB007DD4FC /* HomeViewController.swift in Sources */,
+				452DADFA20DCF3DD002FE4ED /* Helper.swift in Sources */,
+				4539F5F120DF6CFF0032B68D /* CreateMessageViewController.swift in Sources */,
 				456791E120DADADB007DD4FC /* QuestionViewController.swift in Sources */,
-				456791E020DADADB007DD4FC /* QuestionTableViewCell.swift in Sources */,
+				4539F5F320DFA9DA0032B68D /* ProfileViewController.swift in Sources */,
+				4539F5F920DFB3CD0032B68D /* KeywordViewController.swift in Sources */,
+				4539F5F720DFADA70032B68D /* TableViewCell.swift in Sources */,
+				45D0F15520DE36F4000E59AD /* LandingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,7 +376,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -389,7 +427,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -405,6 +443,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SCQJ8JYW4T;
 				INFOPLIST_FILE = "T-each/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hiro.T-each";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -421,6 +460,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SCQJ8JYW4T;
 				INFOPLIST_FILE = "T-each/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hiro.T-each";
 				PRODUCT_NAME = "$(TARGET_NAME)";

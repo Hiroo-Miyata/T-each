@@ -10,4 +10,5 @@ target 'T-each' do
   pod 'Firebase/Firestore'
   pod 'Firebase/Auth'
   pod 'Firebase/Storage'
+  pod 'Alamofire', '~> 4.7'
 end

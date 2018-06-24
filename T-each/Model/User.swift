@@ -31,19 +31,25 @@ class User: NSObject {
                 let imageData = UIImageJPEGRepresentation(profilePic, 0.1)
                 storageRef.putData(imageData!, metadata: nil, completion: { (metadata, err) in
                     if err == nil {
-                        let values = ["name": withName, "email": email]
+                        let path = metadata?.downloadURL()?.absoluteString
+                        let values = ["name": withName, "email": email, "profilePicLink": path!]
                         Firestore.firestore().collection("users").document((user?.uid)!).setData(values, completion: { (err) in
                             if let err = err {
                                 print("Error adding document: \(err)")
                             } else {
-                                print("成功しました")
+                                let userInfo = ["email" : email, "password" : password]
+                                UserDefaults.standard.set(userInfo, forKey: "userInformation")
+                                completion(true)
                             }
                         })
+                    }else {
+                        print(err?.localizedDescription)
                     }
                 })
                 
             }
             else {
+                print(error?.localizedDescription)
                 completion(false)
             }
         })
@@ -56,6 +62,7 @@ class User: NSObject {
                 UserDefaults.standard.set(userInfo, forKey: "userInformation")
                 completion(true)
             } else {
+                print(error?.localizedDescription)
                 completion(false)
             }
         })
@@ -83,11 +90,17 @@ class User: NSObject {
                             let profilePic = UIImage.init(data: data!)
                             let user = User.init(name: name, email: email, id: forUserID, profilePic: profilePic!)
                             completion(user)
+                        }else{
+                            print(err?.localizedDescription)
                         }
                     }).resume()
                     
+                }else{
+                    print("データが取得できません")
                 }
                 
+            }else{
+                print(err?.localizedDescription)
             }
         }
     }
